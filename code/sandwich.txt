@@ -1,10 +1,18 @@
 estimate: 20 lines
 
-place two pieces of bread side by side
-open jar of peanut butter
-open jar of jelly
-grab knife by handle and dip into jelly
-pull 1 oz of jelly of onto one slice of bread, leaving other bread dry
-use knife to spread jelly so that it evenly covers one side of one piece of bread
-repeat lines 6-8 with the peanut butter jar and dry slice of bread
-combine wet side of jelly bread with wet side of peanut butter bread
+place two pieces of bread on the counter so that each piece lays flat on the surface
+assign a name to each piece of bread: one will be jelly_bread and the other will be pb_bread 
+define open function: twist the lid counterclockwise until the lid has been separated from the jar
+    open jar of peanut butter
+    open jar of jelly
+define smear function: use knife covered with ingredients to apply ingredients evenly across one side of bread
+define apply function   ## this function will be repeated for both jelly_bread and pb_bread
+    grab knife by handle
+    dip knife into jar
+    use knife to pull 1 oz of ingredients onto relevant piece of bread
+    smear relevant piece of bread
+apply jelly_bread
+apply pb_bread
+place knife next to bread  ## at this point, each piece of bread should have one surface coated with the eponymous ingredient
+combine wet side of jelly_bread with wet side of pb_bread
+enjoy!
